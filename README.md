@@ -14,11 +14,11 @@ acreditamos que isso o torna um projeto extensionista.
 
 Esse é o nosso Wireframe:
 
-![wireframe](imagens/image.png)
+![wireframe](image.png)
 
 Nosso cabeçalho terão as seguintes opções:
 
-![cabeçalho](imagens/image-1.png)
+![cabeçalho](image-1.png)
 
 - Início – Redireciona o usuário para a página principal;
 - Cursos – Redireciona o usuário para os cursos disponíveis e o nível de conclusão de cada curso;
@@ -29,8 +29,8 @@ Nosso cabeçalho terão as seguintes opções:
 Aqui estarão os cursos em progresso (talvez coloquemos uma barra de progresso em cada
 ícone):
 
-![cursos](imagens/image-2.png)
+![cursos](image-2.png)
 
 Na lateral do site haverá algumas informações rápidas e links específicos e úteis:
 
-![lateral](imagens/image-3.png)
+![lateral](image-3.png)

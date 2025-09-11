@@ -219,3 +219,153 @@ article.curso footer {
         justify-content: center;
     }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f9;
+  color: #333;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: #fff;
+  padding: 60px 20px 40px;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #e0e7ff;
+}
+
+main {
+  margin-right: 270px;
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+main p, main li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+section article {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+section article h2 {
+  margin-bottom: 8px;
+  color: #1e3a8a;
+  font-size: 1.2rem;
+}
+
+section article p {
+  color: #555;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.btn-voltar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background: #1e3a8a;
+  padding: 8px 14px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.btn-voltar:hover {
+  background: #2563eb;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  color: #1e3a8a;
+  padding: 20px;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 5px;
+  color: #1e3a8a;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.sidebar ul li strong {
+  color: #1e3a8a;
+}
+
+.sidebar ul li a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.sidebar footer {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
