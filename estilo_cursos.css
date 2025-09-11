@@ -1,0 +1,221 @@
+:root {
+    --brand-1: #17326f;
+    --brand-2: #2f66f5;
+    --brand-3: #6ca8ff;
+    --accent: #28c76f;
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --text: #1f2a44;
+    --muted: #6b7a99;
+    --ring: rgba(47, 102, 245, 0.25);
+    --radius: 14px;
+    --shadow: 0 6px 20px rgba(23, 50, 111, 0.12);
+}
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.55 "Inter", system-ui, -apple-system, Segoe UI, Roboto,
+        Helvetica, Arial;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Cabeçalho e hero (mesma identidade visual) */
+header.site {
+    background: linear-gradient(135deg, var(--brand-2), var(--brand-1));
+    color: #fff;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    box-shadow: var(--shadow);
+}
+header.site nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px min(4vw, 48px);
+}
+header.site nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+header.site .cta {
+    background: #ffab2e;
+    color: #fff;
+    border: 0;
+    border-radius: 9999px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+section.hero {
+    padding: 42px min(4vw, 48px) 56px;
+}
+section.hero h1 {
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    margin: 0.25rem 0;
+}
+section.hero p {
+    color: #e8eeff;
+    max-width: 62ch;
+    margin: 0.25rem 0 1.3rem;
+}
+section.hero nav {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    backdrop-filter: blur(6px);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-1px);
+}
+.btn.light {
+    background: #fff;
+    color: var(--brand-1);
+    border-color: #fff;
+}
+.btn.ok {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #073814;
+}
+
+/* Layout principal — agora 1 coluna (tipos empilhados) */
+main {
+    padding: 24px min(4vw, 48px) 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+/* Cartões genéricos */
+section.card,
+article.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: min(4vw, 28px);
+    border: 1px solid #eef2ff;
+}
+h2.title {
+    margin: 0 0 18px;
+    font-size: 1.15rem;
+    color: var(--brand-1);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+h2 .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--brand-2);
+}
+small.hint {
+    color: var(--muted);
+}
+
+/* Grade de cursos (cards) */
+section.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+article.curso {
+    display: grid;
+    gap: 10px;
+}
+article.curso header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+article.curso h3 {
+    margin: 0;
+    color: var(--text);
+    font-size: 1rem;
+}
+article.curso p {
+    margin: 0;
+    color: var(--muted);
+}
+article.curso ul {
+    margin: 6px 0 0;
+    padding-left: 18px;
+    color: var(--muted);
+}
+article.curso footer {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border-radius: 999px;
+    background: #f1f6ff;
+    border: 1px solid #e3ecff;
+    font-size: 0.8rem;
+    color: var(--brand-1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    section.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 640px) {
+    header.site nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+    header.site nav ul {
+        flex-wrap: wrap;
+    }
+    section.hero {
+        padding: 28px 18px 38px;
+    }
+    main {
+        padding: 18px;
+    }
+    section.grid {
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

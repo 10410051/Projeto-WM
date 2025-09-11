@@ -34,6 +34,3 @@ Aqui estarão os cursos em progresso (talvez coloquemos uma barra de progresso e
 Na lateral do site haverá algumas informações rápidas e links específicos e úteis:
 
 ![lateral](image-3.png)
-
-
-
