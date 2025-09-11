@@ -1,46 +1,192 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professores - Instituto de Excelência</title>
-  <link rel="stylesheet" href="estilo_cursos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores - Instituto de Excelência</title>
+    <link rel="stylesheet" href="estilo_cursos.css">
 </head>
 <body>
-  <header>
-    <nav><a href="index.html" class="btn-voltar">&lt;</a></nav>
-    <h1>Nosso Corpo Docente</h1>
-    <p>Conheça os professores que fazem parte do Instituto de Excelência</p>
-  </header>
+    <!-- Completely restructured to match the main design -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <section class="logo">
+                <span class="logo-icon">🎓</span>
+                <strong>Instituto de Excelência</strong>
+                <small>Educação Superior</small>
+            </section>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="resultados.html">Projetos</a></li>
+                <li><a href="professores.html" class="active">Professores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <button class="btn-inscricao">Inscreva-se</button>
+        </nav>
+        
+        <section class="hero-section">
+            <h1>Nosso Corpo Docente</h1>
+            <p class="hero-subtitle">Professores qualificados e experientes</p>
+            <p class="hero-description">Conheça os profissionais que fazem parte do Instituto de Excelência</p>
+            
+            <nav class="hero-actions">
+                <a href="#professores" class="btn btn-primary">
+                    <span>👨‍🏫</span> Ver Professores
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <span>📞</span> Fale Conosco
+                </a>
+            </nav>
+        </section>
+    </header>
 
-  <main>
-    <section>
-      <article>
-        <h2>Dr. João Silva</h2>
-        <p>Engenharia - 15 anos de experiência</p>
-      </article>
-      <article>
-        <h2>Dra. Maria Souza</h2>
-        <p>Medicina - Pesquisadora reconhecida pelo MEC</p>
-      </article>
-      <article>
-        <h2>Prof. Carlos Lima</h2>
-        <p>Administração - MBA internacional</p>
-      </article>
-    </section>
-  </main>
+    <main class="main-content">
+        <section class="programas-section" id="professores">
+            <header class="section-header">
+                <h2><span class="bullet">👨‍🏫</span> Professores por Área</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon blue">
+                            <span>⚙️</span>
+                        </figure>
+                        <h3>Dr. João Silva</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Coordenador de Engenharia</li>
+                        <li>15 anos de experiência</li>
+                        <li>Doutorado em Eng. Civil - USP</li>
+                        <li>Especialista em estruturas</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="mailto:joao.silva@instituto.edu.br" class="btn-saiba-mais blue">Contatar</a>
+                    </footer>
+                </article>
 
-  <aside class="sidebar">
-    <div>
-      <h2>Contatos</h2>
-      <ul>
-        <li><strong>Email:</strong> contato@excelencia.edu.br</li>
-        <li><strong>Telefone:</strong> (11) 99999-8888</li>
-        <li><strong>WhatsApp:</strong> (11) 98888-7777</li>
-        <li><strong>Endereço:</strong> Av. Paulista, 1234 - São Paulo</li>
-      </ul>
-    </div>
-    <footer><p>&copy; 2025 Instituto de Excelência</p></footer>
-  </aside>
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon red">
+                            <span>⚕️</span>
+                        </figure>
+                        <h3>Dra. Maria Souza</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Coordenadora de Medicina</li>
+                        <li>Pesquisadora reconhecida pelo MEC</li>
+                        <li>Doutorado em Medicina - UNIFESP</li>
+                        <li>Especialista em cardiologia</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="mailto:maria.souza@instituto.edu.br" class="btn-saiba-mais red">Contatar</a>
+                    </footer>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon green">
+                            <span>💼</span>
+                        </figure>
+                        <h3>Prof. Carlos Lima</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Coordenador de Administração</li>
+                        <li>MBA Internacional - Harvard</li>
+                        <li>20 anos no mercado corporativo</li>
+                        <li>Ex-executivo de multinacionais</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="mailto:carlos.lima@instituto.edu.br" class="btn-saiba-mais green">Contatar</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+
+        <section class="programas-section">
+            <header class="section-header">
+                <h2><span class="bullet">🌟</span> Professores Destaque</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Dra. Ana Costa</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Professora de Bioquímica</li>
+                        <li>Pós-doutorado no exterior</li>
+                        <li>Autora de 50+ artigos científicos</li>
+                        <li>Prêmio de Excelência Acadêmica</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Prof. Roberto Santos</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Professor de Eletrônica</li>
+                        <li>Engenheiro sênior da Petrobras</li>
+                        <li>Especialista em automação</li>
+                        <li>Consultor em projetos industriais</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Profa. Lucia Ferreira</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Professora de Marketing</li>
+                        <li>Diretora de Marketing - Magazine Luiza</li>
+                        <li>Especialista em marketing digital</li>
+                        <li>Palestrante internacional</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <aside class="sidebar" id="contato">
+        <section class="sidebar-section">
+            <header>
+                <h2><span>👨‍🏫</span> Coordenação Acadêmica</h2>
+            </header>
+            <ul class="info-list">
+                <li class="highlight">📧 CONTATO GERAL</li>
+                <li>coordenacao@instituto.edu.br</li>
+                <li>(11) 3456-7890 - Ramal 100</li>
+                <li>Diretor: Prof. Dr. Paulo Mendes</li>
+                <li>Atendimento: Seg-Sex 8h-18h</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section">
+            <header>
+                <h2><span>📚</span> Qualificação Docente</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>🎓</span> 95% com doutorado</li>
+                <li><span>🌍</span> Experiência internacional</li>
+                <li><span>🔬</span> Pesquisadores ativos</li>
+                <li><span>🏢</span> Experiência de mercado</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section portal">
+            <header>
+                <h2><span>📞</span> Fale Conosco</h2>
+            </header>
+            <form class="login-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn-portal">Enviar Mensagem</button>
+            </form>
+        </section>
+    </aside>
 </body>
 </html>

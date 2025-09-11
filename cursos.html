@@ -1,237 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilo_cursos.css">
-        <title>Cursos</title>
-    </head>
-    <body>
-        <!DOCTYPE html>
-        <html lang="pt-br">
-            <head>
-                <meta charset="utf-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width,initial-scale=1"
-                />
-                <title>Instituto de Excelência — Cursos</title>
-            </head>
-            <body>
-                <header class="site" role="banner">
-                    <nav aria-label="Principal">
-                        <a href="#"
-                            ><strong>🎓 Instituto de Excelência</strong></a
-                        >
-                        <ul>
-                            <li><a href="#">Início</a></li>
-                            <li><a aria-current="page" href="#">Cursos</a></li>
-                            <li><a href="#">Pesquisa</a></li>
-                            <li><a href="#">Professores</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                        <button class="cta">Inscreva-se</button>
-                    </nav>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Instituto de Excelência</title>
+    <link rel="stylesheet" href="estilo_cursos.css">
+</head>
+<body>
+    <!-- Fixed duplicate HTML structure and added proper navigation -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <section class="logo">
+                <span class="logo-icon">🎓</span>
+                <strong>Instituto de Excelência</strong>
+                <small>Educação Superior</small>
+            </section>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html" class="active">Cursos</a></li>
+                <li><a href="resultados.html">Projetos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <button class="btn-inscricao">Inscreva-se</button>
+        </nav>
+        
+        <section class="hero-section">
+            <h1>Nossos Cursos</h1>
+            <p class="hero-subtitle">Ofertas de Ensino Superior e Técnico</p>
+            <p class="hero-description">Metodologia prática e infraestrutura moderna para sua formação</p>
+            
+            <nav class="hero-actions">
+                <a href="#graduacao" class="btn btn-primary">
+                    <span>🎓</span> Graduação
+                </a>
+                <a href="#tecnico" class="btn btn-secondary">
+                    <span>🛠️</span> Técnico
+                </a>
+            </nav>
+        </section>
+    </header>
 
-                    <section class="hero" aria-labelledby="hero-t">
-                        <h1 id="hero-t">Nossos Cursos</h1>
-                        <p>
-                            Ofertas de Ensino Superior (Graduação) e Ensino
-                            Técnico com metodologia prática e infraestrutura
-                            moderna.
-                        </p>
-                        <nav aria-label="Atalhos">
-                            <a class="btn light" href="#graduacao"
-                                >🎓 Graduação</a
-                            >
-                            <a class="btn" href="#tecnico">🛠️ Técnico</a>
-                        </nav>
-                    </section>
-                </header>
+    <main class="main-content">
+        <section class="programas-section" id="graduacao">
+            <header class="section-header">
+                <h2><span class="bullet">🎯</span> Ensino Superior - Graduação</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card engenharia">
+                    <header class="card-header">
+                        <figure class="card-icon blue">
+                            <span>⚙️</span>
+                        </figure>
+                        <h3>Engenharia</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Bacharelado • 5 anos</li>
+                        <li>Projetos reais e laboratórios modernos</li>
+                        <li>Trilhas Civil, Computação e Elétrica</li>
+                        <li>Parcerias com a indústria</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="engenharia.html" class="btn-saiba-mais blue">Saiba Mais</a>
+                    </footer>
+                </article>
 
-                <main role="main">
-                    <section
-                        id="graduacao"
-                        class="card"
-                        aria-labelledby="g-title"
-                    >
-                        <h2 class="title">
-                            <span class="dot" aria-hidden="true"></span
-                            ><span id="g-title"
-                                >Ensino Superior — Graduação</span
-                            >
-                        </h2>
-                        <small class="hint"
-                            >Cursos presenciais com opções noturnas.</small
-                        >
+                <article class="programa-card medicina">
+                    <header class="card-header">
+                        <figure class="card-icon red">
+                            <span>⚕️</span>
+                        </figure>
+                        <h3>Medicina</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Bacharelado • 6 anos</li>
+                        <li>Hospital-escola próprio</li>
+                        <li>Simulação realística</li>
+                        <li>Residência completa</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="medicina.html" class="btn-saiba-mais red">Saiba Mais</a>
+                    </footer>
+                </article>
 
-                        <section
-                            class="grid"
-                            aria-label="Lista de cursos de graduação"
-                        >
-                            <article class="card curso">
-                                <header>
-                                    <h3>Engenharia</h3>
-                                    <span class="chip"
-                                        >Bacharelado • 5 anos</span
-                                    >
-                                </header>
-                                <p>
-                                    Projetos reais e laboratórios modernos;
-                                    trilhas Civil, Computação e Elétrica.
-                                </p>
-                                <ul>
-                                    <li>Parcerias com a indústria</li>
-                                    <li>Estágio a partir do 3º ano</li>
-                                </ul>
-                                <footer>
-                                    <a class="btn" href="#">ℹ️ Detalhes</a>
-                                    <a class="btn light" href="#"
-                                        >Matriz curricular</a
-                                    >
-                                </footer>
-                            </article>
+                <article class="programa-card administracao">
+                    <header class="card-header">
+                        <figure class="card-icon green">
+                            <span>💼</span>
+                        </figure>
+                        <h3>Administração</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Bacharelado • 4 anos</li>
+                        <li>Gestão, dados e empreendedorismo</li>
+                        <li>Networking empresarial</li>
+                        <li>Projetos com empresas</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="administracao.html" class="btn-saiba-mais green">Saiba Mais</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
 
-                            <article class="card curso">
-                                <header>
-                                    <h3>Medicina</h3>
-                                    <span class="chip"
-                                        >Bacharelado • 6 anos</span
-                                    >
-                                </header>
-                                <p>
-                                    Hospital-escola próprio, simulação
-                                    realística e residência completa.
-                                </p>
-                                <ul>
-                                    <li>Internato no último ano</li>
-                                    <li>Parcerias internacionais</li>
-                                </ul>
-                                <footer>
-                                    <a class="btn" href="#">ℹ️ Detalhes</a>
-                                    <a class="btn light" href="#">Grade</a>
-                                </footer>
-                            </article>
+        <section class="programas-section" id="tecnico">
+            <header class="section-header">
+                <h2><span class="bullet">🛠️</span> Ensino Técnico</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon red">
+                            <span>🏥</span>
+                        </figure>
+                        <h3>Técnico em Enfermagem</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Duração: 24 meses</li>
+                        <li>Práticas em laboratório</li>
+                        <li>Unidades de saúde conveniadas</li>
+                        <li>Estágio supervisionado</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="#" class="btn-saiba-mais red">Saiba Mais</a>
+                    </footer>
+                </article>
 
-                            <article class="card curso">
-                                <header>
-                                    <h3>Administração</h3>
-                                    <span class="chip"
-                                        >Bacharelado • 4 anos</span
-                                    >
-                                </header>
-                                <p>
-                                    Gestão, dados e empreendedorismo com
-                                    networking empresarial.
-                                </p>
-                                <ul>
-                                    <li>Projetos com empresas</li>
-                                    <li>Dupla titulação (opcional)</li>
-                                </ul>
-                                <footer>
-                                    <a class="btn" href="#">ℹ️ Detalhes</a>
-                                    <a class="btn light" href="#">Grade</a>
-                                </footer>
-                            </article>
-                        </section>
-                    </section>
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon blue">
+                            <span>💻</span>
+                        </figure>
+                        <h3>Técnico em Informática</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Duração: 18 meses</li>
+                        <li>Web, redes e suporte</li>
+                        <li>Projetos para portfólio</li>
+                        <li>Certificações preparatórias</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="#" class="btn-saiba-mais blue">Saiba Mais</a>
+                    </footer>
+                </article>
 
-                    <!-- Técnico -->
-                    <section
-                        id="tecnico"
-                        class="card"
-                        aria-labelledby="t-title"
-                    >
-                        <h2 class="title">
-                            <span class="dot" aria-hidden="true"></span
-                            ><span id="t-title">Ensino Técnico</span>
-                        </h2>
-                        <small class="hint"
-                            >Formações de 12 a 24 meses com aulas
-                            práticas.</small
-                        >
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon green">
+                            <span>📊</span>
+                        </figure>
+                        <h3>Técnico em Administração</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Duração: 12 meses</li>
+                        <li>Rotinas administrativas</li>
+                        <li>Finanças e logística</li>
+                        <li>Projeto integrador</li>
+                    </ul>
+                    <footer class="card-footer">
+                        <a href="#" class="btn-saiba-mais green">Saiba Mais</a>
+                    </footer>
+                </article>
+            </section>
+        </section>
+    </main>
 
-                        <section
-                            class="grid"
-                            aria-label="Lista de cursos técnicos"
-                        >
-                            <article class="card curso">
-                                <header>
-                                    <h3>Técnico em Enfermagem</h3>
-                                    <span class="chip">24 meses</span>
-                                </header>
-                                <p>
-                                    Práticas em laboratório e unidades de saúde
-                                    conveniadas.
-                                </p>
-                                <ul>
-                                    <li>Estágio supervisionado</li>
-                                    <li>Plantões simulados</li>
-                                </ul>
-                                <footer>
-                                    <a class="btn" href="#">ℹ️ Detalhes</a>
-                                    <a class="btn light" href="#">Matriz</a>
-                                </footer>
-                            </article>
+    <aside class="sidebar" id="contato">
+        <section class="sidebar-section">
+            <header>
+                <h2><span>🏢</span> Nossa Instituição</h2>
+            </header>
+            <ul class="info-list">
+                <li class="highlight">📍 CAMPUS PRINCIPAL</li>
+                <li>Mais de 30 anos no mercado</li>
+                <li>Mais de 5000 alunos formados</li>
+                <li>Nota máxima no MEC</li>
+                <li>Estrutura moderna e completa</li>
+            </ul>
+        </section>
 
-                            <article class="card curso">
-                                <header>
-                                    <h3>Técnico em Informática</h3>
-                                    <span class="chip">18 meses</span>
-                                </header>
-                                <p>
-                                    Web, redes e suporte com projetos para
-                                    portfólio.
-                                </p>
-                                <ul>
-                                    <li>Frontend, backend e banco de dados</li>
-                                    <li>Certificações preparatórias</li>
-                                </ul>
-                                <footer>
-                                    <a class="btn" href="#">ℹ️ Detalhes</a>
-                                    <a class="btn light" href="#">Matriz</a>
-                                </footer>
-                            </article>
+        <section class="sidebar-section">
+            <header>
+                <h2><span>📞</span> Contato Rápido</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>📞</span> (11) 3456-7890</li>
+                <li><span>📧</span> contato@instituto.edu.br</li>
+                <li><span>📍</span> Av. Paulista - SP</li>
+            </ul>
+        </section>
 
-                            <article class="card curso">
-                                <header>
-                                    <h3>Técnico em Administração</h3>
-                                    <span class="chip">12 meses</span>
-                                </header>
-                                <p>
-                                    Rotinas administrativas, finanças e
-                                    logística com estudos de caso.
-                                </p>
-                                <ul>
-                                    <li>Projeto integrador</li>
-                                    <li>Parcerias com empresas</li>
-                                </ul>
-                                <footer>
-                                    <a class="btn" href="#">ℹ️ Detalhes</a>
-                                    <a class="btn light" href="#">Matriz</a>
-                                </footer>
-                            </article>
-                        </section>
-                    </section>
-                </main>
-
-                <footer class="site" role="contentinfo">
-                    <section>
-                        <small
-                            >© <span id="ano">2025</span> Instituto de
-                            Excelência</small
-                        >
-                        <small
-                            ><a href="#">Política de Privacidade</a> ·
-                            <a href="#">Termos de Uso</a></small
-                        >
-                    </section>
-                    <script>
-                        document.getElementById("ano").textContent =
-                            new Date().getFullYear();
-                    </script>
-                </footer>
-            </body>
-        </html>
-    </body>
+        <section class="sidebar-section portal">
+            <header>
+                <h2><span>👤</span> Portal do Aluno</h2>
+            </header>
+            <form class="login-form">
+                <input type="email" placeholder="E-mail institucional" required>
+                <button type="submit" class="btn-portal">Acessar Portal</button>
+            </form>
+        </section>
+    </aside>
+</body>
 </html>

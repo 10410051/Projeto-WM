@@ -1,40 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medicina - Instituto de Excelência</title>
-  <link rel="stylesheet" href="estilo_cursos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina - Instituto de Excelência</title>
+    <link rel="stylesheet" href="estilo_cursos.css">
 </head>
 <body>
-  <header>
-    <nav><a href="index.html" class="btn-voltar">&lt;</a></nav>
-    <h1>Curso de Medicina</h1>
-    <p>Excelência na formação de profissionais da saúde.</p>
-  </header>
+    <!-- Completely restructured to match the main design -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <section class="logo">
+                <span class="logo-icon">🎓</span>
+                <strong>Instituto de Excelência</strong>
+                <small>Educação Superior</small>
+            </section>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="resultados.html">Projetos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <button class="btn-inscricao">Inscreva-se</button>
+        </nav>
+        
+        <section class="hero-section">
+            <h1>Curso de Medicina</h1>
+            <p class="hero-subtitle">Excelência na formação de profissionais da saúde</p>
+            <p class="hero-description">6 anos de formação completa com hospital universitário próprio</p>
+            
+            <nav class="hero-actions">
+                <a href="#detalhes" class="btn btn-primary">
+                    <span>⚕️</span> Ver Detalhes
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <span>📞</span> Fale Conosco
+                </a>
+            </nav>
+        </section>
+    </header>
 
-  <main>
-    <section>
-      <h2>Diferenciais</h2>
-      <ul>
-        <li>Laboratórios modernos</li>
-        <li>Professores renomados</li>
-        <li>Convênios com hospitais de referência</li>
-      </ul>
-    </section>
-  </main>
+    <main class="main-content">
+        <section class="programas-section" id="detalhes">
+            <header class="section-header">
+                <h2><span class="bullet">⚕️</span> Diferenciais do Curso</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon red">
+                            <span>🏥</span>
+                        </figure>
+                        <h3>Hospital Universitário</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Hospital-escola próprio</li>
+                        <li>Atendimento real aos pacientes</li>
+                        <li>Supervisão de professores especialistas</li>
+                        <li>Experiência prática desde o início</li>
+                    </ul>
+                </article>
 
-  <aside class="sidebar">
-    <div>
-      <h2>Contatos</h2>
-      <ul>
-        <li><strong>Email:</strong> medicina@excelencia.edu.br</li>
-        <li><strong>Telefone:</strong> (11) 93456-7890</li>
-        <li><strong>WhatsApp:</strong> (11) 98876-5432</li>
-        <li><strong>Endereço:</strong> Av. Paulista, 1234 - São Paulo</li>
-      </ul>
-    </div>
-    <footer><p>&copy; 2025 Instituto de Excelência</p></footer>
-  </aside>
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon blue">
+                            <span>🔬</span>
+                        </figure>
+                        <h3>Laboratórios Modernos</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Equipamentos de última geração</li>
+                        <li>Simulação realística</li>
+                        <li>Laboratórios de anatomia</li>
+                        <li>Centro de simulação médica</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon green">
+                            <span>👨‍⚕️</span>
+                        </figure>
+                        <h3>Corpo Docente</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Professores renomados</li>
+                        <li>Médicos especialistas</li>
+                        <li>Pesquisadores reconhecidos</li>
+                        <li>Experiência internacional</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <section class="programas-section">
+            <header class="section-header">
+                <h2><span class="bullet">📚</span> Estrutura Curricular</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Ciclo Básico (1º-2º ano)</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Anatomia Humana</li>
+                        <li>Fisiologia</li>
+                        <li>Bioquímica</li>
+                        <li>Histologia e Embriologia</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Ciclo Clínico (3º-4º ano)</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Patologia</li>
+                        <li>Farmacologia</li>
+                        <li>Semiologia Médica</li>
+                        <li>Medicina Interna</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Internato (5º-6º ano)</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Clínica Médica</li>
+                        <li>Cirurgia Geral</li>
+                        <li>Pediatria</li>
+                        <li>Ginecologia e Obstetrícia</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <aside class="sidebar" id="contato">
+        <section class="sidebar-section">
+            <header>
+                <h2><span>⚕️</span> Coordenação</h2>
+            </header>
+            <ul class="info-list">
+                <li class="highlight">📧 CONTATO DIRETO</li>
+                <li>medicina@instituto.edu.br</li>
+                <li>(11) 3456-7890 - Ramal 123</li>
+                <li>Coordenador: Dr. João Silva</li>
+                <li>Atendimento: Seg-Sex 8h-18h</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section">
+            <header>
+                <h2><span>📋</span> Processo Seletivo</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>📅</span> Vestibular: 2x por ano</li>
+                <li><span>📝</span> ENEM aceito</li>
+                <li><span>💰</span> Bolsas disponíveis</li>
+                <li><span>🎓</span> Transferência externa</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section portal">
+            <header>
+                <h2><span>📞</span> Fale Conosco</h2>
+            </header>
+            <form class="login-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn-portal">Enviar Mensagem</button>
+            </form>
+        </section>
+    </aside>
 </body>
 </html>

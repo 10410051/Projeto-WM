@@ -1,40 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resultados - Instituto de Excelência</title>
-  <link rel="stylesheet" href="estilo_cursos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Instituto de Excelência</title>
+    <link rel="stylesheet" href="estilo_cursos.css">
 </head>
 <body>
-  <header>
-    <nav><a href="index.html" class="btn-voltar">&lt;</a></nav>
-    <h1>Nossos Resultados</h1>
-    <p>Veja os índices de aprovação e conquistas dos nossos alunos</p>
-  </header>
+    <!-- Fixed header structure to match other pages -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <section class="logo">
+                <span class="logo-icon">🎓</span>
+                <strong>Instituto de Excelência</strong>
+                <small>Educação Superior</small>
+            </section>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="resultados.html" class="active">Projetos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            
+            <button class="btn-inscricao">Inscreva-se</button>
+        </nav>
+        
+        <section class="hero-section">
+            <h1>Nossos Resultados</h1>
+            <p class="hero-subtitle">Excelência comprovada em números</p>
+            <p class="hero-description">Veja os índices de aprovação e conquistas dos nossos alunos</p>
+        </section>
+    </header>
 
-  <main>
-    <section>
-      <h2>Aprovação em Vestibulares</h2>
-      <p>95% dos nossos alunos aprovados em universidades públicas e privadas.</p>
-    </section>
-    <section>
-      <h2>Prêmios Acadêmicos</h2>
-      <p>Mais de 30 alunos premiados em olimpíadas científicas nos últimos 5 anos.</p>
-    </section>
-  </main>
+    <!-- Added proper main content structure with grid layout -->
+    <main class="main-content">
+        <section class="results-section">
+            <header class="section-header">
+                <h2><span class="bullet">📊</span> Conquistas e Aprovações</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon blue">
+                            <span>🎓</span>
+                        </figure>
+                        <h3>Aprovação em Vestibulares</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>95% dos nossos alunos aprovados em universidades públicas e privadas</li>
+                        <li>Destaque em medicina, engenharia e direito</li>
+                        <li>Aprovações em USP, UNICAMP e UNESP</li>
+                    </ul>
+                </article>
 
-  <aside class="sidebar">
-    <div>
-      <h2>Contatos</h2>
-      <ul>
-        <li><strong>Email:</strong> contato@excelencia.edu.br</li>
-        <li><strong>Telefone:</strong> (11) 99999-8888</li>
-        <li><strong>WhatsApp:</strong> (11) 98888-7777</li>
-        <li><strong>Endereço:</strong> Av. Paulista, 1234 - São Paulo</li>
-      </ul>
-    </div>
-    <footer><p>&copy; 2025 Instituto de Excelência</p></footer>
-  </aside>
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon red">
+                            <span>🏆</span>
+                        </figure>
+                        <h3>Prêmios Acadêmicos</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Mais de 30 alunos premiados em olimpíadas científicas nos últimos 5 anos</li>
+                        <li>Medalhas em olimpíadas de matemática, física e química</li>
+                        <li>Reconhecimento nacional e internacional</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon green">
+                            <span>💼</span>
+                        </figure>
+                        <h3>Inserção no Mercado</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>90% dos formandos empregados em 6 meses</li>
+                        <li>Parcerias com grandes empresas</li>
+                        <li>Salários acima da média do mercado</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- Added complete sidebar structure matching other pages -->
+    <aside class="sidebar">
+        <section class="sidebar-section">
+            <header>
+                <h2><span>🏢</span> Nossa Instituição</h2>
+            </header>
+            <ul class="info-list">
+                <li class="highlight">📍 CAMPUS PRINCIPAL</li>
+                <li>Mais de 30 anos no mercado</li>
+                <li>Mais de 5000 alunos formados</li>
+                <li>Nota máxima no MEC</li>
+                <li>Estrutura moderna e completa</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section">
+            <header>
+                <h2><span>📞</span> Contato Rápido</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>📞</span> (11) 3456-7890</li>
+                <li><span>📧</span> contato@instituto.edu.br</li>
+                <li><span>📍</span> Av. Paulista - SP</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section portal">
+            <header>
+                <h2><span>👤</span> Portal do Aluno</h2>
+            </header>
+            <form class="login-form">
+                <input type="email" placeholder="E-mail institucional" required>
+                <button type="submit" class="btn-portal">Acessar Portal</button>
+            </form>
+        </section>
+    </aside>
 </body>
 </html>

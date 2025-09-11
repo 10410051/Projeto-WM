@@ -404,6 +404,65 @@ body {
   background-color: var(--dark-blue);
 }
 
+/* Contact Page Styles */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-card p {
+  margin: 0.5rem 0;
+  color: var(--gray-600);
+}
+
+.contact-card p:first-of-type {
+  font-weight: 600;
+  color: var(--gray-800);
+  font-size: 1.1rem;
+}
+
+.location-section {
+  margin-top: 3rem;
+}
+
+.location-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  max-width: 600px;
+}
+
+.location-card address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.location-card address p {
+  margin: 0.5rem 0;
+  color: var(--gray-600);
+}
+
+.results-section {
+  margin-bottom: 2rem;
+}
+
 /* Media Queries para Responsividade */
 @media (max-width: 1024px) {
   body {
@@ -421,6 +480,11 @@ body {
 
   .programas-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 

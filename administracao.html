@@ -1,40 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Administração - Instituto de Excelência</title>
-  <link rel="stylesheet" href="estilo_cursos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Instituto de Excelência</title>
+    <link rel="stylesheet" href="estilo_cursos.css">
 </head>
 <body>
-  <header>
-    <nav><a href="index.html" class="btn-voltar">&lt;</a></nav>
-    <h1>Curso de Administração</h1>
-    <p>Preparando líderes para o mercado global.</p>
-  </header>
+    <!-- Completely restructured to match the main design -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <section class="logo">
+                <span class="logo-icon">🎓</span>
+                <strong>Instituto de Excelência</strong>
+                <small>Educação Superior</small>
+            </section>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="resultados.html">Projetos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <button class="btn-inscricao">Inscreva-se</button>
+        </nav>
+        
+        <section class="hero-section">
+            <h1>Curso de Administração</h1>
+            <p class="hero-subtitle">Preparando líderes para o mercado global</p>
+            <p class="hero-description">4 anos de formação com foco em gestão, dados e empreendedorismo</p>
+            
+            <nav class="hero-actions">
+                <a href="#areas" class="btn btn-primary">
+                    <span>💼</span> Ver Áreas
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <span>📞</span> Fale Conosco
+                </a>
+            </nav>
+        </section>
+    </header>
 
-  <main>
-    <section>
-      <h2>Disciplinas em Destaque</h2>
-      <ul>
-        <li>Gestão Empresarial</li>
-        <li>Marketing Estratégico</li>
-        <li>Finanças Corporativas</li>
-      </ul>
-    </section>
-  </main>
+    <main class="main-content">
+        <section class="programas-section" id="areas">
+            <header class="section-header">
+                <h2><span class="bullet">💼</span> Áreas de Especialização</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon green">
+                            <span>📊</span>
+                        </figure>
+                        <h3>Gestão Empresarial</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Planejamento estratégico</li>
+                        <li>Gestão de pessoas</li>
+                        <li>Liderança e motivação</li>
+                        <li>Tomada de decisão</li>
+                    </ul>
+                </article>
 
-  <aside class="sidebar">
-    <div>
-      <h2>Contatos</h2>
-      <ul>
-        <li><strong>Email:</strong> administracao@excelencia.edu.br</li>
-        <li><strong>Telefone:</strong> (11) 97890-1234</li>
-        <li><strong>WhatsApp:</strong> (11) 96543-2109</li>
-        <li><strong>Endereço:</strong> Av. Paulista, 1234 - São Paulo</li>
-      </ul>
-    </div>
-    <footer><p>&copy; 2025 Instituto de Excelência</p></footer>
-  </aside>
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon blue">
+                            <span>📈</span>
+                        </figure>
+                        <h3>Marketing Estratégico</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Marketing digital</li>
+                        <li>Pesquisa de mercado</li>
+                        <li>Branding e comunicação</li>
+                        <li>Análise de consumidor</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon red">
+                            <span>💰</span>
+                        </figure>
+                        <h3>Finanças Corporativas</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Análise de investimentos</li>
+                        <li>Gestão de riscos</li>
+                        <li>Controladoria</li>
+                        <li>Mercado de capitais</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <section class="programas-section">
+            <header class="section-header">
+                <h2><span class="bullet">🚀</span> Diferenciais do Curso</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Networking Empresarial</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Parcerias com empresas</li>
+                        <li>Eventos de networking</li>
+                        <li>Mentoria profissional</li>
+                        <li>Oportunidades de estágio</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Projetos Reais</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Consultoria empresarial</li>
+                        <li>Estudos de caso</li>
+                        <li>Simulações de negócios</li>
+                        <li>Empresa júnior</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Empreendedorismo</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Incubadora de startups</li>
+                        <li>Planos de negócio</li>
+                        <li>Inovação e criatividade</li>
+                        <li>Pitch e apresentação</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <aside class="sidebar" id="contato">
+        <section class="sidebar-section">
+            <header>
+                <h2><span>💼</span> Coordenação</h2>
+            </header>
+            <ul class="info-list">
+                <li class="highlight">📧 CONTATO DIRETO</li>
+                <li>administracao@instituto.edu.br</li>
+                <li>(11) 3456-7890 - Ramal 789</li>
+                <li>Coordenador: Prof. Carlos Lima</li>
+                <li>Atendimento: Seg-Sex 8h-18h</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section">
+            <header>
+                <h2><span>🎯</span> Mercado de Trabalho</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>🏢</span> Grandes corporações</li>
+                <li><span>🏦</span> Bancos e financeiras</li>
+                <li><span>🚀</span> Startups e scale-ups</li>
+                <li><span>👔</span> Consultoria empresarial</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section portal">
+            <header>
+                <h2><span>📞</span> Fale Conosco</h2>
+            </header>
+            <form class="login-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn-portal">Enviar Mensagem</button>
+            </form>
+        </section>
+    </aside>
 </body>
 </html>

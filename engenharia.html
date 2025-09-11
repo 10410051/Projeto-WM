@@ -1,40 +1,183 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engenharia - Instituto de Excelência</title>
-  <link rel="stylesheet" href="estilo_cursos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia - Instituto de Excelência</title>
+    <link rel="stylesheet" href="estilo_cursos.css">
 </head>
 <body>
-  <header>
-    <nav><a href="index.html" class="btn-voltar">&lt;</a></nav>
-    <h1>Curso de Engenharia</h1>
-    <p>Formando engenheiros preparados para os desafios do futuro.</p>
-  </header>
+    <!-- Completely restructured to match the main design -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <section class="logo">
+                <span class="logo-icon">🎓</span>
+                <strong>Instituto de Excelência</strong>
+                <small>Educação Superior</small>
+            </section>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="resultados.html">Projetos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <button class="btn-inscricao">Inscreva-se</button>
+        </nav>
+        
+        <section class="hero-section">
+            <h1>Curso de Engenharia</h1>
+            <p class="hero-subtitle">Formando engenheiros preparados para os desafios do futuro</p>
+            <p class="hero-description">5 anos de formação com projetos reais e laboratórios modernos</p>
+            
+            <nav class="hero-actions">
+                <a href="#areas" class="btn btn-primary">
+                    <span>⚙️</span> Ver Áreas
+                </a>
+                <a href="#contato" class="btn btn-secondary">
+                    <span>📞</span> Fale Conosco
+                </a>
+            </nav>
+        </section>
+    </header>
 
-  <main>
-    <section>
-      <h2>Áreas de Atuação</h2>
-      <ul>
-        <li>Engenharia Civil</li>
-        <li>Engenharia Elétrica</li>
-        <li>Engenharia Mecânica</li>
-      </ul>
-    </section>
-  </main>
+    <main class="main-content">
+        <section class="programas-section" id="areas">
+            <header class="section-header">
+                <h2><span class="bullet">⚙️</span> Áreas de Especialização</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon blue">
+                            <span>🏗️</span>
+                        </figure>
+                        <h3>Engenharia Civil</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Construção e infraestrutura</li>
+                        <li>Projetos estruturais</li>
+                        <li>Gestão de obras</li>
+                        <li>Sustentabilidade na construção</li>
+                    </ul>
+                </article>
 
-  <aside class="sidebar">
-    <div>
-      <h2>Contatos</h2>
-      <ul>
-        <li><strong>Email:</strong> engenharia@excelencia.edu.br</li>
-        <li><strong>Telefone:</strong> (11) 91234-5678</li>
-        <li><strong>WhatsApp:</strong> (11) 97654-3210</li>
-        <li><strong>Endereço:</strong> Av. Paulista, 1234 - São Paulo</li>
-      </ul>
-    </div>
-    <footer><p>&copy; 2025 Instituto de Excelência</p></footer>
-  </aside>
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon red">
+                            <span>⚡</span>
+                        </figure>
+                        <h3>Engenharia Elétrica</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Sistemas de energia</li>
+                        <li>Automação industrial</li>
+                        <li>Eletrônica de potência</li>
+                        <li>Energias renováveis</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <figure class="card-icon green">
+                            <span>💻</span>
+                        </figure>
+                        <h3>Engenharia de Computação</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Desenvolvimento de software</li>
+                        <li>Sistemas embarcados</li>
+                        <li>Inteligência artificial</li>
+                        <li>Redes e segurança</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <section class="programas-section">
+            <header class="section-header">
+                <h2><span class="bullet">🔬</span> Laboratórios e Infraestrutura</h2>
+            </header>
+            
+            <section class="programas-grid">
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Laboratório de Materiais</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Ensaios de resistência</li>
+                        <li>Análise de materiais</li>
+                        <li>Controle de qualidade</li>
+                        <li>Pesquisa aplicada</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Lab. de Eletrônica</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Circuitos analógicos</li>
+                        <li>Sistemas digitais</li>
+                        <li>Microcontroladores</li>
+                        <li>Prototipagem rápida</li>
+                    </ul>
+                </article>
+
+                <article class="programa-card">
+                    <header class="card-header">
+                        <h3>Lab. de Computação</h3>
+                    </header>
+                    <ul class="card-features">
+                        <li>Programação avançada</li>
+                        <li>Simulação computacional</li>
+                        <li>Desenvolvimento mobile</li>
+                        <li>Projetos integrados</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <aside class="sidebar" id="contato">
+        <section class="sidebar-section">
+            <header>
+                <h2><span>⚙️</span> Coordenação</h2>
+            </header>
+            <ul class="info-list">
+                <li class="highlight">📧 CONTATO DIRETO</li>
+                <li>engenharia@instituto.edu.br</li>
+                <li>(11) 3456-7890 - Ramal 456</li>
+                <li>Coordenador: Prof. Dr. João Silva</li>
+                <li>Atendimento: Seg-Sex 8h-18h</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section">
+            <header>
+                <h2><span>🎯</span> Mercado de Trabalho</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>🏢</span> Construtoras e empreiteiras</li>
+                <li><span>⚡</span> Concessionárias de energia</li>
+                <li><span>💻</span> Empresas de tecnologia</li>
+                <li><span>🏭</span> Indústrias diversas</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section portal">
+            <header>
+                <h2><span>📞</span> Fale Conosco</h2>
+            </header>
+            <form class="login-form">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn-portal">Enviar Mensagem</button>
+            </form>
+        </section>
+    </aside>
 </body>
 </html>
