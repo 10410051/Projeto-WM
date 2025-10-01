@@ -32,6 +32,48 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  scroll-behavior: smooth; /* Adicionando scroll suave para toda a página */
+}
+
+/* Adicionando animações CSS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
 }
 
 /* Header e Navegação */
@@ -41,6 +83,8 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: var(--shadow-lg);
+  /* Adicionando animação ao header */
+  animation: slideInLeft 0.8s ease-out;
 }
 
 .top-nav {
@@ -60,6 +104,8 @@ body {
 
 .logo-icon {
   font-size: 1.5rem;
+  /* Adicionando animação de pulso ao ícone */
+  animation: pulse 2s ease-in-out infinite;
 }
 
 .logo strong {
@@ -83,7 +129,27 @@ body {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  transition: background-color 0.3s;
+  /* Melhorando transição */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Adicionando efeito de underline animado */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--white);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 80%;
 }
 
 .nav-menu a:hover,
@@ -99,12 +165,19 @@ body {
   border-radius: 25px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  /* Melhorando transição e adicionando animação de pulso */
+  transition: all 0.3s ease;
+  animation: pulse 3s ease-in-out infinite;
 }
 
 .btn-inscricao:hover {
-  transform: translateY(-2px);
+  /* Melhorando efeito hover */
+  transform: translateY(-2px) scale(1.05);
   box-shadow: var(--shadow);
+}
+
+.btn-inscricao:active {
+  transform: translateY(0) scale(0.98);
 }
 
 /* Hero Section */
@@ -112,6 +185,8 @@ body {
   padding: 3rem 2rem 4rem;
   text-align: left;
   max-width: 800px;
+  /* Adicionando animação ao hero */
+  animation: fadeInUp 1s ease-out 0.3s backwards;
 }
 
 .hero-section h1 {
@@ -147,7 +222,8 @@ body {
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s;
+  /* Melhorando transição */
+  transition: all 0.3s ease;
   border: 2px solid transparent;
 }
 
@@ -157,8 +233,9 @@ body {
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
+  /* Melhorando efeito hover */
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: var(--shadow-lg);
 }
 
 .btn-secondary {
@@ -170,6 +247,8 @@ body {
 .btn-secondary:hover {
   background-color: var(--white);
   color: var(--primary-blue);
+  /* Adicionando transformação */
+  transform: translateY(-2px);
 }
 
 /* Layout Principal */
@@ -199,6 +278,8 @@ body {
   height: fit-content;
   position: sticky;
   top: 0;
+  /* Adicionando animação à sidebar */
+  animation: slideInLeft 0.8s ease-out 0.5s backwards;
 }
 
 /* Seção Programas */
@@ -226,14 +307,24 @@ body {
   border-radius: 16px;
   padding: 2rem;
   box-shadow: var(--shadow);
-  transition: transform 0.3s, box-shadow 0.3s;
+  /* Melhorando transição */
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* Preparando para animação via JavaScript */
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.programa-card.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .programa-card:hover {
-  transform: translateY(-4px);
+  /* Melhorando efeito hover */
+  transform: translateY(-8px) scale(1.02);
   box-shadow: var(--shadow-lg);
 }
 
@@ -253,6 +344,12 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  /* Adicionando transição suave */
+  transition: transform 0.3s ease;
+}
+
+.programa-card:hover .card-icon {
+  transform: rotate(5deg) scale(1.1);
 }
 
 .card-icon.blue {
@@ -288,13 +385,12 @@ body {
   font-size: 0.9rem;
   padding-left: 1rem;
   position: relative;
+  /* Adicionando transição */
+  transition: transform 0.2s ease;
 }
 
-.card-features li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--primary-blue);
+.programa-card:hover .card-features li {
+  transform: translateX(5px);
 }
 
 .card-footer {
@@ -308,7 +404,8 @@ body {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s;
+  /* Melhorando transição */
+  transition: all 0.3s ease;
 }
 
 .btn-saiba-mais.blue {
@@ -329,6 +426,10 @@ body {
 .btn-saiba-mais:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
+}
+
+.btn-saiba-mais:active {
+  transform: translateY(0);
 }
 
 /* Sidebar */
@@ -362,6 +463,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  /* Adicionando transição */
+  transition: transform 0.2s ease;
+}
+
+.info-list li:hover,
+.contact-list li:hover {
+  transform: translateX(5px);
 }
 
 .info-list .highlight {
@@ -380,12 +488,16 @@ body {
   border: 1px solid var(--gray-300);
   border-radius: 8px;
   font-size: 0.9rem;
+  /* Adicionando transição */
+  transition: all 0.3s ease;
 }
 
 .login-form input:focus {
   outline: none;
   border-color: var(--primary-blue);
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  /* Adicionando transformação */
+  transform: scale(1.02);
 }
 
 .btn-portal {
@@ -396,11 +508,19 @@ body {
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s;
+  /* Melhorando transição */
+  transition: all 0.3s ease;
 }
 
 .btn-portal:hover {
   background-color: var(--dark-blue);
+  /* Adicionando transformação */
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.btn-portal:active {
+  transform: translateY(0);
 }
 
 /* Contact Page Styles */
@@ -416,8 +536,17 @@ body {
   border-radius: 16px;
   padding: 2rem;
   box-shadow: var(--shadow);
-  transition: transform 0.3s, box-shadow 0.3s;
+  /* Melhorando transição */
+  transition: all 0.3s ease;
   text-align: center;
+  /* Preparando para animação via JavaScript */
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.contact-card.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .contact-card:hover {
@@ -446,20 +575,19 @@ body {
   padding: 2rem;
   box-shadow: var(--shadow);
   max-width: 600px;
+  /* Preparando para animação via JavaScript */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.3s ease;
 }
 
-.location-card address {
-  font-style: normal;
-  line-height: 1.8;
+.location-card.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.location-card address p {
-  margin: 0.5rem 0;
-  color: var(--gray-600);
-}
-
-.results-section {
-  margin-bottom: 2rem;
+.location-card:hover {
+  box-shadow: var(--shadow-lg);
 }
 
 /* Media Queries para Responsividade */
