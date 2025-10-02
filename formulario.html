@@ -143,54 +143,6 @@
             </ul>
         </section>
     </aside>
-    
     <script src="script.js"></script>
-    <script>
-        // Form-specific validation and handling
-        document.getElementById('inscriptionForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                nome: document.getElementById('nome').value,
-                email: document.getElementById('email').value,
-                telefone: document.getElementById('telefone').value,
-                cpf: document.getElementById('cpf').value,
-                nascimento: document.getElementById('nascimento').value,
-                curso: document.getElementById('curso').value,
-                periodo: document.getElementById('periodo').value,
-                mensagem: document.getElementById('mensagem').value
-            };
-            
-            console.log('[v0] Form data:', formData);
-            
-            alert('Inscrição enviada com sucesso! Em breve entraremos em contato.');
-            
-            // Redirect to home page after submission
-            setTimeout(() => {
-                window.location.href = 'index.html';
-            }, 2000);
-        });
-
-        // CPF mask
-        document.getElementById('cpf').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                value = value.replace(/(\d{3})(\d)/, '$1.$2');
-                value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
-                e.target.value = value;
-            }
-        });
-
-        // Phone mask
-        document.getElementById('telefone').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                value = value.replace(/(\d{2})(\d)/, '($1) $2');
-                value = value.replace(/(\d{5})(\d)/, '$1-$2');
-                e.target.value = value;
-            }
-        });
-    </script>
 </body>
 </html>

@@ -1,8 +1,7 @@
-// Validação e interatividade para formulários
 document.addEventListener("DOMContentLoaded", () => {
   console.log("[v0] Script carregado com sucesso")
 
-  // Formulário de login do Portal do Aluno
+
   const loginForms = document.querySelectorAll(".login-form")
   loginForms.forEach((form) => {
     form.addEventListener("submit", function (e) {
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Animação de scroll suave para links âncora
+
   const anchorLinks = document.querySelectorAll('a[href^="#"]')
   anchorLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
-        // Add staggered animation delay
+
         setTimeout(() => {
           entry.target.classList.add("fade-in-up")
         }, index * 100)
@@ -66,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }, observerOptions)
 
-  // Observar todos os cards
+
   const cards = document.querySelectorAll(".programa-card, .contact-card, .location-card")
   cards.forEach((card) => {
     observer.observe(card)
@@ -80,6 +79,60 @@ document.addEventListener("DOMContentLoaded", () => {
       this.style.transition = "all 0.3s ease"
     })
   })
+
+
+  const inscriptionForm = document.getElementById("inscriptionForm")
+  if (inscriptionForm) {
+    inscriptionForm.addEventListener("submit", (e) => {
+      e.preventDefault()
+
+      const formData = {
+        nome: document.getElementById("nome").value,
+        email: document.getElementById("email").value,
+        telefone: document.getElementById("telefone").value,
+        cpf: document.getElementById("cpf").value,
+        nascimento: document.getElementById("nascimento").value,
+        curso: document.getElementById("curso").value,
+        periodo: document.getElementById("periodo").value,
+        mensagem: document.getElementById("mensagem").value,
+      }
+
+      console.log("[v0] Form data:", formData)
+
+      alert("Inscrição enviada com sucesso! Em breve entraremos em contato.")
+
+      setTimeout(() => {
+        window.location.href = "index.html"
+      }, 2000)
+    })
+
+
+    const cpfInput = document.getElementById("cpf")
+    if (cpfInput) {
+      cpfInput.addEventListener("input", (e) => {
+        let value = e.target.value.replace(/\D/g, "")
+        if (value.length <= 11) {
+          value = value.replace(/(\d{3})(\d)/, "$1.$2")
+          value = value.replace(/(\d{3})(\d)/, "$1.$2")
+          value = value.replace(/(\d{3})(\d{1,2})$/, "$1-$2")
+          e.target.value = value
+        }
+      })
+    }
+
+
+    const telefoneInput = document.getElementById("telefone")
+    if (telefoneInput) {
+      telefoneInput.addEventListener("input", (e) => {
+        let value = e.target.value.replace(/\D/g, "")
+        if (value.length <= 11) {
+          value = value.replace(/(\d{2})(\d)/, "($1) $2")
+          value = value.replace(/(\d{5})(\d)/, "$1-$2")
+          e.target.value = value
+        }
+      })
+    }
+  }
 
   console.log("[v0] Todas as interações foram configuradas")
 })
