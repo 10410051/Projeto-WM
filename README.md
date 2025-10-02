@@ -39,7 +39,7 @@ Aqui estarão os cursos em progresso (talvez coloquemos uma barra de progresso e
 
 Na lateral do site haverá algumas informações rápidas e links específicos e úteis:
 
-![lateral](imagens/imagem-3.png)
+![lateral](imagens/image-3.png)
 
 ## 🎯 Processo de Ideação
 
