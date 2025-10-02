@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição - Instituto de Excelência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="top-nav">
+            <section class="logo">
+                <span class="logo-icon">🎓</span>
+                <strong>Instituto de Excelência</strong>
+                <small>Educação Superior</small>
+            </section>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="resultados.html">Projetos</a></li>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            
+            <button class="btn-inscricao">Inscreva-se</button>
+        </nav>
+        
+        <section class="hero-section">
+            <h1>Formulário de Inscrição</h1>
+            <p class="hero-subtitle">Dê o primeiro passo para seu futuro</p>
+            <p class="hero-description">Preencha o formulário abaixo e nossa equipe entrará em contato</p>
+        </section>
+    </header>
+
+    <main class="main-content">
+        <section class="form-section">
+            <header class="section-header">
+                <h2><span class="bullet">📝</span> Dados Pessoais</h2>
+            </header>
+            
+            <form class="inscription-form" id="inscriptionForm">
+                <section class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </section>
+
+                <section class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                </section>
+
+                <section class="form-group">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(11) 98888-7777">
+                </section>
+
+                <section class="form-group">
+                    <label for="cpf">CPF *</label>
+                    <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+                </section>
+
+                <section class="form-group">
+                    <label for="nascimento">Data de Nascimento *</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </section>
+
+                <section class="form-group">
+                    <label for="curso">Curso de Interesse *</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecione um curso</option>
+                        <option value="engenharia">Engenharia</option>
+                        <option value="medicina">Medicina</option>
+                        <option value="administracao">Administração</option>
+                        <option value="enfermagem">Técnico em Enfermagem</option>
+                        <option value="informatica">Técnico em Informática</option>
+                        <option value="adm-tecnico">Técnico em Administração</option>
+                    </select>
+                </section>
+
+                <section class="form-group">
+                    <label for="periodo">Período Preferencial *</label>
+                    <select id="periodo" name="periodo" required>
+                        <option value="">Selecione um período</option>
+                        <option value="matutino">Matutino</option>
+                        <option value="vespertino">Vespertino</option>
+                        <option value="noturno">Noturno</option>
+                    </select>
+                </section>
+
+                <section class="form-group">
+                    <label for="mensagem">Mensagem (Opcional)</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos um pouco sobre você e seus objetivos"></textarea>
+                </section>
+
+                <section class="form-group checkbox-group">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos e condições e autorizo o contato *</label>
+                </section>
+
+                <footer class="form-actions">
+                    <button type="submit" class="btn-submit">Enviar Inscrição</button>
+                    <a href="index.html" class="btn-cancel">Cancelar</a>
+                </footer>
+            </form>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <section class="sidebar-section">
+            <header>
+                <h2><span>📋</span> Processo de Inscrição</h2>
+            </header>
+            <ul class="info-list">
+                <li class="highlight">1️⃣ PREENCHA O FORMULÁRIO</li>
+                <li>2️⃣ Aguarde nosso contato</li>
+                <li>3️⃣ Agende uma visita ao campus</li>
+                <li>4️⃣ Realize o processo seletivo</li>
+                <li>5️⃣ Efetue a matrícula</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section">
+            <header>
+                <h2><span>💰</span> Formas de Pagamento</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>💳</span> Cartão de crédito</li>
+                <li><span>🏦</span> Boleto bancário</li>
+                <li><span>📄</span> Financiamento estudantil</li>
+                <li><span>🎓</span> Bolsas de estudo</li>
+            </ul>
+        </section>
+
+        <section class="sidebar-section">
+            <header>
+                <h2><span>📞</span> Dúvidas?</h2>
+            </header>
+            <ul class="contact-list">
+                <li><span>📞</span> (11) 3456-7890</li>
+                <li><span>📧</span> inscricoes@instituto.edu.br</li>
+                <li><span>💬</span> (11) 98888-7777</li>
+            </ul>
+        </section>
+    </aside>
+    
+    <script src="script.js"></script>
+    <script>
+        // Form-specific validation and handling
+        document.getElementById('inscriptionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                nome: document.getElementById('nome').value,
+                email: document.getElementById('email').value,
+                telefone: document.getElementById('telefone').value,
+                cpf: document.getElementById('cpf').value,
+                nascimento: document.getElementById('nascimento').value,
+                curso: document.getElementById('curso').value,
+                periodo: document.getElementById('periodo').value,
+                mensagem: document.getElementById('mensagem').value
+            };
+            
+            console.log('[v0] Form data:', formData);
+            
+            alert('Inscrição enviada com sucesso! Em breve entraremos em contato.');
+            
+            // Redirect to home page after submission
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+
+        // CPF mask
+        document.getElementById('cpf').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 11) {
+                value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                value = value.replace(/(\d{3})(\d)/, '$1.$2');
+                value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+                e.target.value = value;
+            }
+        });
+
+        // Phone mask
+        document.getElementById('telefone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length <= 11) {
+                value = value.replace(/(\d{2})(\d)/, '($1) $2');
+                value = value.replace(/(\d{5})(\d)/, '$1-$2');
+                e.target.value = value;
+            }
+        });
+    </script>
+</body>
+</html>
