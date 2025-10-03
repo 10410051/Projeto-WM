@@ -425,6 +425,7 @@ document.getElementById('telefone').addEventListener('input', function(e) {
 
 ### Estrutura de Arquivos
 
+```
 ProjetoWM/
 ├── index.html              # Página principal
 ├── cursos.html             # Lista de cursos
@@ -442,7 +443,7 @@ ProjetoWM/
     ├── image-1.png
     ├── image-2.png
     └── image-3.png
-
+```
 ---
 
 ## Conclusão e Aprendizados
