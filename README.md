@@ -13,7 +13,9 @@
 ## Nomes
 
 Daniel Zacharias Bittar Atui 10410051
+
 Lucas Assis 10735712
+
 Gabriel Athia 10264752
 
 ---
@@ -46,7 +48,7 @@ Na lateral do site haverá algumas informações rápidas e links específicos e
 
 ![lateral](imagens/image-3.png)
 
-## 🎯 Processo de Ideação
+## Processo de Ideação
 
 ### Conceito do Projeto
 
@@ -71,7 +73,7 @@ O projeto seguiu uma abordagem estruturada:
 
 ---
 
-## 🌍 Caráter Extensionista
+## Caráter Extensionista
 
 ### Impacto Social e Educacional
 
@@ -100,7 +102,7 @@ O projeto seguiu uma abordagem estruturada:
 
 ---
 
-## 💻 Explicação do Código
+## Explicação do Código
 
 ### Estrutura HTML5 Semântica
 
@@ -113,7 +115,6 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 
 #### Elementos Semânticos Utilizados
 
-\`\`\`html
 <header>    Cabeçalho da página 
 <nav>       Navegação principal 
 <main>      Conteúdo principal 
@@ -123,11 +124,10 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 <footer>    Rodapé (em cards) 
 <figure>    Ícones e imagens 
 <address>   Informações de contato 
-\`\`\`
+
 
 #### Exemplo Prático: Estrutura de um Card
 
-\`\`\`html
 <article class="programa-card">
   <header class="card-header">
     <figure class="card-icon blue">
@@ -143,7 +143,6 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
     <a href="engenharia.html" class="btn-saiba-mais blue">Saiba Mais</a>
   </footer>
 </article>
-\`\`\`
 
 **Explicação**:
 - `<article>`: Define um conteúdo independente (o card)
@@ -157,7 +156,6 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 
 #### Sistema de Cores 
 
-\`\`\`css
 :root {
   --primary-blue: #2563eb;
   --dark-blue: #1e3a8a;
@@ -166,7 +164,6 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
   --green: #16a34a;
   --orange: #f59e0b;
 }
-\`\`\`
 
 **Vantagens**:
 - Fácil manutenção: alterar uma cor em um único lugar
@@ -177,7 +174,6 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 
 ##### 1. Fade In Up 
 
-\`\`\`css
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -192,7 +188,6 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 .fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
 }
-\`\`\`
 
 **Como funciona**:
 - Elemento começa invisível (`opacity: 0`) e 30px abaixo
@@ -201,7 +196,6 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 
 ##### 2. Slide In Left (Entrada Lateral)
 
-\`\`\`css
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -212,13 +206,11 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
     transform: translateX(0);
   }
 }
-\`\`\`
 
 **Uso**: Aplicado ao header e sidebar para criar sensação de profundidade
 
 ##### 3. Pulse (Pulsação)
 
-\`\`\`css
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);
@@ -227,13 +219,11 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
     transform: scale(1.05);
   }
 }
-\`\`\`
 
 **Uso**: Aplicado ao botão "Inscreva-se" para chamar atenção
 
 #### Layout Responsivo com CSS Grid
 
-\`\`\`css
 body {
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -245,7 +235,6 @@ body {
 .main-header { grid-area: header; }
 .main-content { grid-area: main; }
 .sidebar { grid-area: sidebar; }
-\`\`\`
 
 **Explicação**:
 - Layout em duas colunas: conteúdo principal (1fr) e sidebar (300px)
@@ -254,7 +243,6 @@ body {
 
 #### Media Queries para Responsividade
 
-\`\`\`css
 @media (max-width: 1024px) {
   body {
     grid-template-columns: 1fr;
@@ -264,7 +252,6 @@ body {
       "sidebar";
   }
 }
-\`\`\`
 
 ---
 
@@ -272,12 +259,10 @@ body {
 
 #### 1. Event Listener Principal
 
-\`\`\`javascript
 document.addEventListener("DOMContentLoaded", () => {
   console.log("[v0] Script carregado com sucesso")
   // Código executado após o DOM estar pronto
 })
-\`\`\`
 
 **Por que usar DOMContentLoaded?**
 - Garante que todo o HTML foi carregado antes de executar o JavaScript
@@ -286,7 +271,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 #### 2. Validação de Formulários
 
-\`\`\`javascript
 const loginForms = document.querySelectorAll(".login-form")
 loginForms.forEach((form) => {
   form.addEventListener("submit", function (e) {
@@ -300,7 +284,6 @@ loginForms.forEach((form) => {
     }
   })
 })
-\`\`\`
 
 **Explicação passo a passo**:
 1. Seleciona todos os formulários com classe `.login-form`
@@ -311,7 +294,6 @@ loginForms.forEach((form) => {
 
 #### 3. Redirecionamento do Botão Inscreva-se
 
-\`\`\`javascript
 const btnInscricao = document.querySelectorAll(".btn-inscricao")
 btnInscricao.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -319,13 +301,11 @@ btnInscricao.forEach((btn) => {
     window.location.href = 'formulario.html'
   })
 })
-\`\`\`
 
 **Funcionalidade**: Redireciona para a página de formulário ao clicar
 
 #### 4. Scroll Suave para Âncoras
 
-\`\`\`javascript
 const anchorLinks = document.querySelectorAll('a[href^="#"]')
 anchorLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
@@ -342,13 +322,11 @@ anchorLinks.forEach((link) => {
     }
   })
 })
-\`\`\`
 
 **Resultado**: Links internos (#professores, #contato) rolam suavemente até a seção
 
 #### 5. Intersection Observer para Animações
 
-\`\`\`javascript
 const observerOptions = {
   threshold: 0.1,
   rootMargin: "0px 0px -50px 0px",
@@ -369,7 +347,6 @@ const cards = document.querySelectorAll(".programa-card, .contact-card")
 cards.forEach((card) => {
   observer.observe(card)
 })
-\`\`\`
 
 **Como funciona**:
 1. **Intersection Observer**: API moderna que detecta quando elementos entram na viewport
@@ -385,7 +362,6 @@ cards.forEach((card) => {
 
 #### 6. Máscaras de Input (Formulário)
 
-\`\`\`javascript
 // Máscara de CPF
 document.getElementById('cpf').addEventListener('input', function(e) {
   let value = e.target.value.replace(/\D/g, '') // Remove não-dígitos
@@ -396,11 +372,9 @@ document.getElementById('cpf').addEventListener('input', function(e) {
     e.target.value = value
   }
 })
-\`\`\`
 
 **Resultado**: Formata automaticamente para `000.000.000-00`
 
-\`\`\`javascript
 // Máscara de Telefone
 document.getElementById('telefone').addEventListener('input', function(e) {
   let value = e.target.value.replace(/\D/g, '')
@@ -410,7 +384,6 @@ document.getElementById('telefone').addEventListener('input', function(e) {
     e.target.value = value
   }
 })
-\`\`\`
 
 **Resultado**: Formata automaticamente para `(11) 98888-7777`
 
@@ -418,7 +391,6 @@ document.getElementById('telefone').addEventListener('input', function(e) {
 
 ### Estrutura de Arquivos
 
-\`\`\`
 ProjetoWM/
 ├── index.html              # Página principal
 ├── cursos.html             # Lista de cursos
@@ -436,11 +408,10 @@ ProjetoWM/
     ├── image-1.png
     ├── image-2.png
     └── image-3.png
-\`\`\`
 
 ---
 
-## 🎓 Conclusão e Aprendizados
+## Conclusão e Aprendizados
 
 ### Aprendizados Técnicos
 
@@ -513,7 +484,7 @@ ProjetoWM/
 
 ---
 
-## 📚 Referências e Recursos
+## Referências e Recursos
 
 ### Tecnologias Utilizadas
 - **HTML5**: Estrutura semântica
