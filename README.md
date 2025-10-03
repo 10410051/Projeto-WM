@@ -1,23 +1,20 @@
 # Tutorial - Instituto de Excelência: Site Educacional
 
 ## 📋 Índice
-1. [Processo de Ideação](#processo-de-ideação)
-2. [Protótipos Iniciais](#protótipos-iniciais)
+1. [Wireframe](#wireframe)
+2. [Processo de Ideação](#processo-de-ideação)
+3. [Protótipos Iniciais](#protótipos-iniciais)
 3. [Caráter Extensionista](#caráter-extensionista)
-4. [Explicação do Código](#explicação-do-código)
-5. [Conclusão e Aprendizados](#conclusão-e-aprendizados)
+5. [Explicação do Código](#explicação-do-código)
+6. [Conclusão e Aprendizados](#conclusão-e-aprendizados)
 
 ---
 
 ## Wireframe
 
-Visto o grande problema na educação no Brasil, resolvemos criar um site focado para
-auxiliar crianças e adultos ao estudo de matérias acadêmicas básicas e superiores. Tudo
-seria disponibilizado gratuitamente e teria uma interface simples e direta, para assim
-qualquer tipo de pessoa conseguir acessar e compreender o funcionamento do site,
-acreditamos que isso o torna um projeto extensionista.
+### Wireframe:
 
-Esse é o nosso Wireframe:
+Geral:
 
 ![wireframe](imagens/image.png)
 
@@ -44,59 +41,25 @@ Na lateral do site haverá algumas informações rápidas e links específicos e
 ## 🎯 Processo de Ideação
 
 ### Conceito do Projeto
-O **Instituto de Excelência** é um site educacional desenvolvido para apresentar uma instituição de ensino superior fictícia. O projeto foi concebido com os seguintes objetivos:
 
-- **Objetivo Principal**: Criar uma plataforma web informativa que apresente os cursos, professores e estrutura da instituição
-- **Público-Alvo**: Estudantes em busca de informações sobre cursos superiores e técnicos
-- **Proposta de Valor**: Facilitar o acesso à informação educacional e o processo de inscrição
+Visto o grande problema na educação no Brasil, resolvemos criar um site focado para
+auxiliar crianças e adultos ao estudo de matérias acadêmicas básicas e superiores. Tudo
+seria disponibilizado gratuitamente e teria uma interface simples e direta, para assim
+qualquer tipo de pessoa conseguir acessar e compreender o funcionamento do site,
+acreditamos que isso o torna um projeto extensionista.
+
+- **Objetivo Principal**: Criar uma plataforma web informativa que apresente os cursos e professores
+- **Público-Alvo**: Estudantes em busca de informações sobre cursos com um facil acesso
+- **Proposta de Valor**: Facilitar o acesso à informação educacional.
 
 ### Metodologia de Desenvolvimento
+
 O projeto seguiu uma abordagem estruturada:
 
 1. **Análise de Requisitos**: Identificação das páginas necessárias (Home, Cursos, Professores, Contato, Formulário)
-2. **Design de Interface**: Criação de wireframes baseados em princípios de UX/UI
+2. **Design de Interface**: Criação de wireframes baseados em nossa ideia
 3. **Desenvolvimento**: Implementação usando HTML5 semântico, CSS3 e JavaScript vanilla
 4. **Testes e Refinamento**: Validação de funcionalidades e correção de bugs
-
----
-
-## 🎨 Protótipos Iniciais
-
-### Wireframe da Página Principal
-![Wireframe Homepage](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-mNJgdJaewmD57lzvwPygVntd6MqU80.png)
-
-O wireframe da homepage apresenta:
-- **Header**: Logo, navegação e botão de inscrição em destaque
-- **Hero Section**: Título principal com call-to-actions
-- **Programas Acadêmicos**: Cards para Engenharia, Medicina e Administração
-- **Sidebar**: Informações institucionais, contato rápido e portal do aluno
-
-### Wireframe Mobile
-![Wireframe Mobile](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uoUgFlvafy2mV4POzBCI6D3AAOYosd.png)
-
-O design mobile-first inclui:
-- **Nossa Instituição**: Informações sobre o campus e diferenciais
-- **Contato Rápido**: Telefone, e-mail e localização
-- **Portal do Aluno**: Formulário de login simplificado
-
-### Navegação e Estrutura
-![Navegação](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-IW7OYAZRki432buGjPQCLXxqRlCa6M.png)
-
-Sistema de navegação com ícones intuitivos:
-- 🏠 Início
-- 📚 Cursos
-- 🔬 Pesquisa (Projetos)
-- 👨‍🏫 Professores
-- 📞 Contato
-
-### Cards de Programas
-![Cards de Programas](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ry6Mir29AgwRxhEmqhBfTwtelf1XVn.png)
-
-Cada programa acadêmico possui:
-- Ícone identificador colorido
-- Título do curso
-- Lista de diferenciais
-- Botão "Saiba Mais" com cor temática
 
 ---
 
@@ -104,24 +67,25 @@ Cada programa acadêmico possui:
 
 ### Impacto Social e Educacional
 
-Este projeto possui forte **caráter extensionista** ao:
-
 #### 1. Democratização do Acesso à Informação
+
 - **Acessibilidade**: Site responsivo que funciona em dispositivos móveis, tablets e desktops
 - **Clareza**: Informações organizadas de forma intuitiva e fácil de navegar
 - **Inclusão**: Uso de HTML semântico que facilita a leitura por tecnologias assistivas
 
 #### 2. Ponte entre Instituição e Comunidade
+
 - **Transparência**: Apresentação clara dos cursos, corpo docente e infraestrutura
 - **Comunicação Direta**: Múltiplos canais de contato (telefone, e-mail, WhatsApp)
 - **Processo Simplificado**: Formulário de inscrição online que reduz barreiras de entrada
 
 #### 3. Promoção da Educação
+
 - **Visibilidade**: Destaque para diferentes áreas do conhecimento (Engenharia, Medicina, Administração)
 - **Inspiração**: Apresentação de professores qualificados e resultados acadêmicos
-- **Oportunidades**: Informações sobre bolsas, financiamento e formas de ingresso
 
 #### 4. Desenvolvimento de Competências Digitais
+
 - **Aprendizado Prático**: Projeto desenvolvido por estudantes aplicando conhecimentos de HTML, CSS e JavaScript
 - **Trabalho Colaborativo**: Desenvolvimento em equipe promovendo soft skills
 - **Resolução de Problemas**: Identificação e correção de bugs reais
@@ -178,13 +142,12 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 - `<header>`: Cabeçalho do card com ícone e título
 - `<figure>`: Container semântico para o ícone
 - `<ul>`: Lista não ordenada de características
-- `<footer>`: Rodapé do card com ação
 
 ---
 
 ### CSS: Estilização e Animações
 
-#### Sistema de Cores com CSS Variables
+#### Sistema de Cores 
 
 \`\`\`css
 :root {
@@ -204,7 +167,7 @@ O projeto utiliza **HTML5 semântico** (sem uso de `<div>`) para:
 
 #### Animações CSS
 
-##### 1. Fade In Up (Entrada de Elementos)
+##### 1. Fade In Up 
 
 \`\`\`css
 @keyframes fadeInUp {
@@ -294,8 +257,6 @@ body {
   }
 }
 \`\`\`
-
-**Resultado**: Em telas menores, a sidebar move para baixo do conteúdo principal
 
 ---
 
@@ -501,6 +462,7 @@ ProjetoWM/
 - Divisão de tarefas entre membros do grupo
 - Comunicação efetiva para resolver problemas
 - Revisão de código colaborativa
+- Uso da ferramenta git e sua integração com vscode
 
 #### 2. Debugging e Resolução de Problemas
 - Identificação sistemática de bugs (professores não aparecendo, botões não funcionando)
@@ -539,14 +501,7 @@ ProjetoWM/
 
 ### Próximos Passos
 
-Para evolução futura do projeto, sugerimos:
-
-1. **Backend**: Implementar servidor para processar formulários realmente
-2. **Banco de Dados**: Armazenar inscrições e informações de alunos
-3. **Autenticação**: Sistema real de login para portal do aluno
-4. **CMS**: Painel administrativo para gerenciar conteúdo
-5. **Testes Automatizados**: Garantir qualidade do código
-6. **Deploy**: Publicar o site em servidor real
+- Adicionar React 
 
 ---
 
@@ -560,18 +515,10 @@ Para evolução futura do projeto, sugerimos:
 
 ### Padrões Seguidos
 - **W3C**: Validação HTML e CSS
-- **WCAG 2.1**: Diretrizes de acessibilidade
-- **Mobile-First**: Design responsivo
-- **Progressive Enhancement**: Funcionalidade básica para todos
+- **Mobile**: Design responsivo
 
 ### Ferramentas de Desenvolvimento
-- Editor de código (VS Code, Sublime, etc.)
-- Navegadores modernos (Chrome, Firefox, Safari)
+- Editor de código: VS Code
+- Navegadores modernos
 - DevTools para debugging
 - Git para versionamento
-
----
-
-**Desenvolvido com 💙 pela equipe do Instituto de Excelência**
-
-*Este projeto é parte de um trabalho acadêmico com caráter extensionista, visando aplicar conhecimentos técnicos para criar soluções que beneficiem a comunidade educacional.*
