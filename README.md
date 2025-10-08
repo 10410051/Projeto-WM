@@ -10,16 +10,6 @@
 
 ---
 
-## Nomes
-
-Daniel Zacharias Bittar Atui 10410051
-
-Lucas Assis 10735712
-
-Gabriel Athia 10264752
-
----
-
 ## Wireframe
 
 ### Wireframe:
